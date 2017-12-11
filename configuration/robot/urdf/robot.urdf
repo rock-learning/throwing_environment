@@ -1,0 +1,672 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 0.7 -->
+  <robot name="compi">
+
+    <link name="ball_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.3"/>
+        <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+      </inertial>
+      <visual name="visual_ball">
+        <origin xyz="0 0 -3e-06" rpy="0 0 0"/>
+        <geometry>
+          <sphere radius="0.03"/>
+        </geometry>
+      </visual>
+      <collision name="collision_ball">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <sphere radius="0.03"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="base_link">
+      <visual name="visual_0_base_link">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="2.0 2.0 0.01"/>
+        </geometry>
+        <material name="ArtemisGreen.001"/>
+      </visual>
+      <collision name="collision_0_base_link">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.558592 2.0 0.01"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="frontArm_link_1">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.25"/>
+        <inertia ixx="0" ixy="0" ixz="0" iyy="-0.032127" iyz="0" izz="0"/>
+      </inertial>
+      <visual name="visual_0_frontArm_link_1">
+        <origin xyz="0 -0.001411 0.092801" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.025" length="0.05"/>
+        </geometry>
+      </visual>
+      <visual name="visual_1_frontArm_link_1">
+        <origin xyz="0 -0.00028 0.035462" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.03425" length="0.065"/>
+        </geometry>
+      </visual>
+      <collision name="collision_0_frontArm_link_1">
+        <origin xyz="0 -0.001411 0.092801" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.025" length="0.05"/>
+        </geometry>
+      </collision>
+      <collision name="collision_1_frontArm_link_1">
+        <origin xyz="0 -0.00028 0.035462" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.03425" length="0.065"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="frontArm_link_2">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.0"/>
+        <inertia ixx="0.136078" ixy="-0.026787" ixz="0" iyy="0" iyz="0.019548" izz="0"/>
+      </inertial>
+      <visual name="visual_0_frontArm_link_2">
+        <origin xyz="0 0 -0.022592" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0325" length="0.06"/>
+        </geometry>
+      </visual>
+      <visual name="visual_1_frontArm_link_2">
+        <origin xyz="0 0.000826 0.012798" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0275" length="0.015"/>
+        </geometry>
+      </visual>
+      <visual name="visual_2_frontArm_link_2">
+        <origin xyz="0 0.000826 0.040234" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.024" length="0.04"/>
+        </geometry>
+      </visual>
+      <visual name="visual_3_frontArm_link_2">
+        <origin xyz="0 0.14412 0.060152" rpy="-1.598722 0 0"/>
+        <geometry>
+          <cylinder radius="0.0185" length="0.232"/>
+        </geometry>
+      </visual>
+      <visual name="visual_4_frontArm_link_2">
+        <origin xyz="0 0.28099 0.030369" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.023" length="0.04"/>
+        </geometry>
+      </visual>
+      <collision name="collision_0_frontArm_link_2">
+        <origin xyz="0 0 -0.022592" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0325" length="0.06"/>
+        </geometry>
+      </collision>
+      <collision name="collision_1_frontArm_link_2">
+        <origin xyz="0 0.000826 0.012798" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0275" length="0.015"/>
+        </geometry>
+      </collision>
+      <collision name="collision_2_frontArm_link_2">
+        <origin xyz="0 0.000826 0.040234" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.024" length="0.04"/>
+        </geometry>
+      </collision>
+      <collision name="collision_3_frontArm_link_2">
+        <origin xyz="0 0.14412 0.060152" rpy="-1.598722 0 0"/>
+        <geometry>
+          <cylinder radius="0.0185" length="0.232"/>
+        </geometry>
+      </collision>
+      <collision name="collision_4_frontArm_link_2">
+        <origin xyz="0 0.28099 0.030369" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.023" length="0.04"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="frontArm_link_3">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.0"/>
+        <inertia ixx="0.136411" ixy="0.00633" ixz="0.003189" iyy="0.21774" iyz="0.028058" izz="0"/>
+      </inertial>
+      <visual name="visual_0_frontArm_link_3">
+        <origin xyz="0 0 -0.02" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.032" length="0.064"/>
+        </geometry>
+      </visual>
+      <collision name="collision_0_frontArm_link_3">
+        <origin xyz="0 0 -0.02" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.032" length="0.064"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="frontArm_link_4">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.25"/>
+        <inertia ixx="0.033909" ixy="0.000834" ixz="-0.012772" iyy="0.090327" iyz="-0.004694" izz="0"/>
+      </inertial>
+      <visual name="visual_0_frontArm_link_4">
+        <origin xyz="0 0 0.067039" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.025" length="0.05"/>
+        </geometry>
+      </visual>
+      <visual name="visual_1_frontArm_link_4">
+        <origin xyz="0 0 0.123833" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.03425" length="0.065"/>
+        </geometry>
+      </visual>
+      <visual name="visual_2_frontArm_link_4">
+        <origin xyz="0 0 0.231862" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0185" length="0.15"/>
+        </geometry>
+      </visual>
+      <collision name="collision_0_frontArm_link_4">
+        <origin xyz="0 0 0.067039" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.025" length="0.05"/>
+        </geometry>
+      </collision>
+      <collision name="collision_1_frontArm_link_4">
+        <origin xyz="0 0 0.123833" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.03425" length="0.065"/>
+        </geometry>
+      </collision>
+      <collision name="collision_2_frontArm_link_4">
+        <origin xyz="0 0 0.231862" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0185" length="0.15"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="frontArm_link_kelle">
+      <visual name="visual_000_frontArm_link_kelle">
+        <origin xyz="-0.004 0 0.02974" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.008 0.035 0.0625"/>
+        </geometry>
+      </visual>
+      <visual name="visual_001_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.043521 0.094344" rpy="0 0 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_002_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.037602 0.112438" rpy="0 0.643383 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_003_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.022423 0.124325" rpy="0 1.144665 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_004_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.000145 0.128606" rpy="-1.570797 1.570796 0"/>
+        <geometry>
+          <box size="0.001 0.005 0.028"/>
+        </geometry>
+      </visual>
+      <visual name="visual_005_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.04352 0.094344" rpy="0 0 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_006_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.0376 0.112438" rpy="0 -0.643381 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_007_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.02242 0.12432" rpy="0 -1.144657 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_008_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.037602 0.076645" rpy="0 -0.643381 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_009_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.0376 0.076645" rpy="0 0.643381 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_010_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.022423 0.06503" rpy="0 -1.144657 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_011_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.02242 0.06503" rpy="0 1.144657 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </visual>
+      <visual name="visual_012_frontArm_link_kelle">
+        <origin xyz="-0.011952 -0.020371 0.068027" rpy="0.789027 -0.943655 0.676653"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_013_frontArm_link_kelle">
+        <origin xyz="-0.011794 -0.03428 0.078734" rpy="0.358454 -0.544416 0.948343"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_014_frontArm_link_kelle">
+        <origin xyz="-0.011793 0.000133 0.125639" rpy="-1.570798 1.047091 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.012 0.025527"/>
+        </geometry>
+      </visual>
+      <visual name="visual_015_frontArm_link_kelle">
+        <origin xyz="-0.01172 -0.019539 0.121895" rpy="-0.797474 0.918196 0.645032"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_016_frontArm_link_kelle">
+        <origin xyz="-0.011605 -0.033835 0.111059" rpy="-0.390789 0.544875 0.89792"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_017_frontArm_link_kelle">
+        <origin xyz="-0.011952 -0.039677 0.094562" rpy="0 0 0.959931"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_018_frontArm_link_kelle">
+        <origin xyz="-0.011952 0.02037 0.068027" rpy="-0.789029 -0.943648 -0.676647"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_019_frontArm_link_kelle">
+        <origin xyz="-0.011952 0.03968 0.094562" rpy="0 0 -0.959931"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_020_frontArm_link_kelle">
+        <origin xyz="-0.011605 0.03384 0.111059" rpy="0.390797 0.544874 -0.89792"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_021_frontArm_link_kelle">
+        <origin xyz="-0.01172 0.01954 0.121895" rpy="0.797476 0.918201 -0.645039"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_022_frontArm_link_kelle">
+        <origin xyz="-0.011793 0.000133 0.063916" rpy="-1.570798 -1.047093 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.012 0.025527"/>
+        </geometry>
+      </visual>
+      <visual name="visual_023_frontArm_link_kelle">
+        <origin xyz="-0.011794 0.03428 0.078734" rpy="-0.358456 -0.544421 -0.948342"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_025_frontArm_link_kelle">
+        <origin xyz="-0.02154 -0.02161 0.078734" rpy="0.584162 -0.51119 0.471763"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_026_frontArm_link_kelle">
+        <origin xyz="-0.02312 0.000133 0.114625" rpy="-1.570798 0.581098 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.019 0.025527"/>
+        </geometry>
+      </visual>
+      <visual name="visual_027_frontArm_link_kelle">
+        <origin xyz="-0.021544 -0.021614 0.11068" rpy="-0.584158 0.511198 0.471757"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_028_frontArm_link_kelle">
+        <origin xyz="-0.023116 -0.02669 0.094562" rpy="0 0 0.487776"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_029_frontArm_link_kelle">
+        <origin xyz="-0.02312 0.000133 0.074957" rpy="-1.570798 -0.58109 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.019 0.025527"/>
+        </geometry>
+      </visual>
+      <visual name="visual_030_frontArm_link_kelle">
+        <origin xyz="-0.02154 0.02161 0.078734" rpy="0.584162 -0.51119 -0.471763"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_031_frontArm_link_kelle">
+        <origin xyz="-0.021544 0.02161 0.11068" rpy="-0.584158 0.511198 -0.471763"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_032_frontArm_link_kelle">
+        <origin xyz="-0.023116 0.02669 0.094562" rpy="0 0 -0.487767"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </visual>
+      <visual name="visual_033_frontArm_link_kelle">
+        <origin xyz="-0.028808 0.000133 0.09456" rpy="-1.570798 0 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.022 0.03"/>
+        </geometry>
+      </visual>
+      <collision name="collision_000_frontArm_link_kelle">
+        <origin xyz="-0.004 0 0.02974" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.008 0.035 0.0625"/>
+        </geometry>
+      </collision>
+      <collision name="collision_001_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.043521 0.094344" rpy="0 0 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_002_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.037602 0.112438" rpy="0 0.643383 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_003_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.022423 0.124325" rpy="0 1.144665 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_004_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.000145 0.128606" rpy="-1.570797 1.570796 0"/>
+        <geometry>
+          <box size="0.001 0.005 0.028"/>
+        </geometry>
+      </collision>
+      <collision name="collision_005_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.04352 0.094344" rpy="0 0 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_006_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.0376 0.112438" rpy="0 -0.643381 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_007_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.02242 0.12432" rpy="0 -1.144657 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_008_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.037602 0.076645" rpy="0 -0.643381 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_009_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.0376 0.076645" rpy="0 0.643381 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_010_frontArm_link_kelle">
+        <origin xyz="-0.002856 -0.022423 0.06503" rpy="0 -1.144657 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_011_frontArm_link_kelle">
+        <origin xyz="-0.002856 0.02242 0.06503" rpy="0 1.144657 1.570796"/>
+        <geometry>
+          <box size="0.001 0.005 0.02"/>
+        </geometry>
+      </collision>
+      <collision name="collision_012_frontArm_link_kelle">
+        <origin xyz="-0.011952 -0.020371 0.068027" rpy="0.789027 -0.943655 0.676653"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_013_frontArm_link_kelle">
+        <origin xyz="-0.011794 -0.03428 0.078734" rpy="0.358454 -0.544416 0.948343"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_014_frontArm_link_kelle">
+        <origin xyz="-0.011793 0.000133 0.125639" rpy="-1.570798 1.047091 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.012 0.025527"/>
+        </geometry>
+      </collision>
+      <collision name="collision_015_frontArm_link_kelle">
+        <origin xyz="-0.01172 -0.019539 0.121895" rpy="-0.797474 0.918196 0.645032"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_016_frontArm_link_kelle">
+        <origin xyz="-0.011605 -0.033835 0.111059" rpy="-0.390789 0.544875 0.89792"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_017_frontArm_link_kelle">
+        <origin xyz="-0.011952 -0.039677 0.094562" rpy="0 0 0.959931"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_018_frontArm_link_kelle">
+        <origin xyz="-0.011952 0.02037 0.068027" rpy="-0.789029 -0.943648 -0.676647"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_019_frontArm_link_kelle">
+        <origin xyz="-0.011952 0.03968 0.094562" rpy="0 0 -0.959931"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_020_frontArm_link_kelle">
+        <origin xyz="-0.011605 0.03384 0.111059" rpy="0.390797 0.544874 -0.89792"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_021_frontArm_link_kelle">
+        <origin xyz="-0.01172 0.01954 0.121895" rpy="0.797476 0.918201 -0.645039"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_022_frontArm_link_kelle">
+        <origin xyz="-0.011793 0.000133 0.063916" rpy="-1.570798 -1.047093 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.012 0.025527"/>
+        </geometry>
+      </collision>
+      <collision name="collision_023_frontArm_link_kelle">
+        <origin xyz="-0.011794 0.03428 0.078734" rpy="-0.358456 -0.544421 -0.948342"/>
+        <geometry>
+          <box size="0.001 0.012 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_025_frontArm_link_kelle">
+        <origin xyz="-0.02154 -0.02161 0.078734" rpy="0.584162 -0.51119 0.471763"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_026_frontArm_link_kelle">
+        <origin xyz="-0.02312 0.000133 0.114625" rpy="-1.570798 0.581098 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.019 0.025527"/>
+        </geometry>
+      </collision>
+      <collision name="collision_027_frontArm_link_kelle">
+        <origin xyz="-0.021544 -0.021614 0.11068" rpy="-0.584158 0.511198 0.471757"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_028_frontArm_link_kelle">
+        <origin xyz="-0.023116 -0.02669 0.094562" rpy="0 0 0.487776"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_029_frontArm_link_kelle">
+        <origin xyz="-0.02312 0.000133 0.074957" rpy="-1.570798 -0.58109 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.019 0.025527"/>
+        </geometry>
+      </collision>
+      <collision name="collision_030_frontArm_link_kelle">
+        <origin xyz="-0.02154 0.02161 0.078734" rpy="0.584162 -0.51119 -0.471763"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_031_frontArm_link_kelle">
+        <origin xyz="-0.021544 0.02161 0.11068" rpy="-0.584158 0.511198 -0.471763"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_032_frontArm_link_kelle">
+        <origin xyz="-0.023116 0.02669 0.094562" rpy="0 0 -0.487767"/>
+        <geometry>
+          <box size="0.001 0.019 0.018233"/>
+        </geometry>
+      </collision>
+      <collision name="collision_033_frontArm_link_kelle">
+        <origin xyz="-0.028808 0.000133 0.09456" rpy="-1.570798 0 -1e-06"/>
+        <geometry>
+          <box size="0.001 0.022 0.03"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="frontArm_mount_link">
+    </link>
+
+    <joint name="ball_joint" type="fixed">
+      <origin xyz="0 0 0.09496" rpy="0 0 0"/>
+      <parent link="frontArm_link_kelle"/>
+      <child link="ball_link"/>
+    </joint>
+
+    <joint name="frontArm_joint_1" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="frontArm_mount_link"/>
+      <child link="frontArm_link_1"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.141593" upper="3.141593" effort="10" velocity="3.141593"/>
+    </joint>
+
+    <joint name="frontArm_joint_2" type="revolute">
+      <origin xyz="0 0 0.158" rpy="1.570796 0 0"/>
+      <parent link="frontArm_link_1"/>
+      <child link="frontArm_link_2"/>
+      <axis xyz="0 0 -1.0"/>
+      <limit lower="-1.8" upper="2.09" effort="10" velocity="3.141593"/>
+    </joint>
+
+    <joint name="frontArm_joint_3" type="fixed">
+      <origin xyz="0 0.28 0" rpy="0 0 0"/>
+      <parent link="frontArm_link_2"/>
+      <child link="frontArm_link_3"/>
+      <axis xyz="0 0 -1.0"/>
+      <limit lower="-2.3" upper="2.3" effort="10" velocity="3.141593"/>
+    </joint>
+
+    <joint name="frontArm_joint_4" type="revolute">
+      <origin xyz="0 0 0" rpy="-1.570796 0 0"/>
+      <parent link="frontArm_link_3"/>
+      <child link="frontArm_link_4"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-3.141593" upper="3.141593" effort="10" velocity="3.141593"/>
+    </joint>
+
+    <joint name="frontArm_joint_5" type="fixed">
+      <origin xyz="0 0 0.34" rpy="0 0 0"/>
+      <parent link="frontArm_link_4"/>
+      <child link="frontArm_link_kelle"/>
+      <axis xyz="0 0 -1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="10" velocity="3.141593"/>
+    </joint>
+
+    <joint name="frontArm_mount_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="frontArm_mount_link"/>
+      <limit effort="10" velocity="3.141593"/>
+    </joint>
+
+    <material name="ArtemisGreen">
+      <color rgba="0.2 0.9 0.2 1.0"/>
+    </material>
+
+    <material name="ArtemisGreen.001">
+      <color rgba="0.2 0.9 0.2 1.0"/>
+    </material>
+
+    <material name="Material.001">
+      <color rgba="0.64 0.64 0.64 1.0"/>
+    </material>
+
+  </robot>

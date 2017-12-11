@@ -1,0 +1,48 @@
+#materials definition SMURF file for "robot", 20160311_17:24
+
+materials:
+- ambientColor:
+    b: 0.2
+    g: 0.9
+    r: 0.2
+  diffuseColor:
+    b: 0.2
+    g: 0.9
+    r: 0.2
+  name: ArtemisGreen
+  shininess: 25.0
+  specularColor:
+    b: 0.5
+    g: 0.5
+    r: 0.5
+  users: 6
+- ambientColor:
+    b: 0.2
+    g: 0.9
+    r: 0.2
+  diffuseColor:
+    b: 0.2
+    g: 0.9
+    r: 0.2
+  name: ArtemisGreen.001
+  shininess: 25.0
+  specularColor:
+    b: 0.5
+    g: 0.5
+    r: 0.5
+  users: 1
+- ambientColor:
+    b: 0.64
+    g: 0.64
+    r: 0.64
+  diffuseColor:
+    b: 0.64
+    g: 0.64
+    r: 0.64
+  name: Material.001
+  shininess: 25.0
+  specularColor:
+    b: 0.5
+    g: 0.5
+    r: 0.5
+  users: 1

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 0.7 -->
+  <robot name="target">
+
+    <link name="target_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.3"/>
+        <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+      </inertial>
+      <visual name="visual_ball">
+        <origin xyz="0 0 -3e-06" rpy="0 0 0"/>
+        <geometry>
+          <sphere radius="0.03"/>
+        </geometry>
+      </visual>
+    </link>
+  </robot>

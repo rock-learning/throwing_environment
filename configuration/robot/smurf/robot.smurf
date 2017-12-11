@@ -1,0 +1,11 @@
+# main SMURF file of model "robot"
+# created with Phobos 0.7 - https://github.com/rock-simulation/phobos
+
+SMURF version: 0.7
+modelname: robot
+date: '20160311_17:24'
+files:
+- ../urdf/robot.urdf
+- robot_collision.yml
+- robot_materials.yml
+- robot_motors.yml

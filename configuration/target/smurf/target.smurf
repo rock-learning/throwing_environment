@@ -1,0 +1,8 @@
+# main SMURF file of model "target"
+# created with Phobos 0.7 - https://github.com/rock-simulation/phobos
+
+SMURF version: 0.7
+modelname: target
+date: '20160311_17:24'
+files:
+- ../urdf/target.urdf

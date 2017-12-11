@@ -1,0 +1,33 @@
+#motors definition SMURF file for "robot", 20160311_17:24
+
+motors:
+- d: 0
+  i: 0
+  joint: frontArm_joint_1
+  maxEffort: 100.0
+  maxSpeed: 3.14
+  maxValue: 2.094
+  minValue: -2.094
+  name: frontArm_motor_1
+  p: 100.0
+  type: POSITION
+- d: 0
+  i: 0
+  joint: frontArm_joint_2
+  maxEffort: 100.0
+  maxSpeed: 3.14
+  maxValue: 1.4
+  minValue: -1.57
+  name: frontArm_motor_2
+  p: 100.0
+  type: POSITION
+- d: 0
+  i: 0
+  joint: frontArm_joint_4
+  maxEffort: 100.0
+  maxSpeed: 3.14
+  maxValue: 2.0
+  minValue: -2.0
+  name: frontArm_motor_4
+  p: 100.0
+  type: POSITION

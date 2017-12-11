@@ -1,0 +1,18 @@
+# SMURF scene: 'throwing'; created 20150918_10:26
+# created with Phobos 0.7 - https://github.com/rock-simulation/phobos
+
+entities:
+- anchor: world
+  file: robot/smurf/robot.smurf
+  name: robot_0
+  pose: default
+  position: [0.0, 0.0, 0.0]
+  rotation: [1.0, 0.0, 0.0, 0.0]
+  type: smurf
+- anchor: none
+  file: target/smurf/target.smurf
+  name: target_0
+  pose: default
+  position: [2.0, 0.0, 0.0]
+  rotation: [1.0, 0.0, 0.0, 0.0]
+  type: smurf

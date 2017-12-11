@@ -1,0 +1,8 @@
+window_id: 1
+node_id: 1
+lock_camera: 1
+lock_rotation: 1
+offset_pos: 1 -3 1
+offset_euler: 80 0 0
+offset_rot: 0.642788 0 0 0.766044
+frustum: -2.37856 2.37856 -1.33794 1.33794 2.86923 4.29559

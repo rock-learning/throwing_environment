@@ -1,0 +1,8 @@
+Environment:
+  type: throwing_environment
+  calc_ms: 10
+  graphicsUpdateTime: 10
+  stepTimeMs: 10
+  ballThrowTime: 0
+  verbose: 2
+  enableGUI: true
