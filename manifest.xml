@@ -2,9 +2,9 @@
   <description brief="throw_environment">
     Ball throwing with a simple robot arm
   </description>
-  <depend package="bolero" />
-  <depend package="mars_environment" />
-  <depend package="lib_manager" />
-  <depend package="mars_utils" />
-  <depend package="configmaps" />
+  <depend package="learning/bolero/include" />
+  <depend package="learning/bolero/src/environment/mars_environment" />
+  <depend package="simulation/lib_manager" />
+  <depend package="simulation/mars/common/utils" />
+  <depend package="tools/configmaps" />
 </package>
